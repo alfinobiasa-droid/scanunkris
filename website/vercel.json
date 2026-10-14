@@ -1,3 +1,12 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json"
+  "$schema": "https://json.schemastore.org/vercel.json",
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
+    "NEXT_PUBLIC_PC_BRIDGE_URL": "@pc_bridge_url",
+    "NEXT_PUBLIC_APP_ENV": "production"
+  }
 }
