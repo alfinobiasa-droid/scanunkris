@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply border-border;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-slate-900;
+}

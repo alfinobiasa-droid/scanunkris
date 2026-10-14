@@ -1,0 +1,20 @@
+{
+  "name": "scansurat-unkris",
+  "version": "1.0.0",
+  "description": "Full-stack document scanner for UNKRIS portal with real-time relay",
+  "private": true,
+  "workspaces": [
+    "website",
+    "pc-bridge",
+    "chrome-extension"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  }
+}
