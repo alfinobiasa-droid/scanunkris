@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/vercel.json",
   "version": 2,
-  "buildCommand": "cd website && npm run build",
+  "buildCommand": "cd website && npm install --legacy-peer-deps && npm run build",
   "outputDirectory": "website/.next"
 }
