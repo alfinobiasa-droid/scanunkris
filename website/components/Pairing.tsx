@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import QRCode from 'qrcode.react'
 import { useAppStore } from '@/lib/store'
 import { createPairingSession, verifyPairingCode, updatePairingMobileConnected } from '@/lib/supabase-service'
