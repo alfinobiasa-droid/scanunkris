@@ -37,7 +37,6 @@ export default function OCRResult({ imageData, onComplete, onCancel }: OCRResult
         setRawText(result.text)
 
         // Extract fields
-        const { extractFieldsFromText } = await import('@/lib/ocr-service')
         const extracted = extractFieldsFromText(result.text)
         setFields(extracted)
 
