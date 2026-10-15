@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { ExtractedFields } from '@/lib/types'
 import { useAppStore } from '@/lib/store'
-import { getOCRService } from '@/lib/ocr-service'
 
 interface OCRResultProps {
   imageData: string
