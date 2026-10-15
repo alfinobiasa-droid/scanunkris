@@ -4,7 +4,6 @@ import { useState, useRef } from 'react'
 import QRCode from 'qrcode.react'
 import { useAppStore } from '@/lib/store'
 import { createPairingSession, verifyPairingCode, updatePairingMobileConnected } from '@/lib/supabase-service'
-import { generateQRToken } from '@/lib/utils'
 
 export default function Pairing() {
   const [step, setStep] = useState<'initial' | 'qr' | 'verify' | 'confirmed'>('initial')
