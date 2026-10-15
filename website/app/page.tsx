@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     // Subscribe to pairing session changes if session exists
     if (currentSession?.id) {
-      const subscription = subscribePairingSession(currentSession.id, (payload) => {
+      subscribePairingSession(currentSession.id, (payload) => {
         console.log('Pairing session updated:', payload)
       })
 
@@ -22,6 +22,7 @@ export default function Home() {
         unsubscribeAll()
       }
     }
+    return undefined
   }, [currentSession?.id])
 
   return (
